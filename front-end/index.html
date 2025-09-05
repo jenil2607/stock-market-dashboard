@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the Chart.js library to draw charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+     <header class="page-header">
+        <h1>Stock Market Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <!-- Left Panel: Company List -->
+        <aside class="sidebar">
+            <h2>Companies</h2>
+            <ul id="company-list">
+                <!-- JavaScript will load the company list here -->
+                <li>Loading...</li>
+            </ul>
+        </aside>
+
+        <!-- Main Panel: Chart Display -->
+        <main class="main-content">
+            <h1 id="company-name">Select a Company</h1>
+            <div class="chart-container">
+                <canvas id="stock-chart"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <footer class="page-footer">
+        <p>&copy; 2024 Stock Dashboard. Created for the JarNox Assignment.</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
